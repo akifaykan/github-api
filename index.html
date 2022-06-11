@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Javascript Github Api</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="app">
+    
+    <form id="github-form">
+        <input type="text" id="username" placeholder="Github Username">
+        <button type="submit">ARA</button>
+    </form>
+
+    <div class="profile-wrap br">
+        <div class="data">
+            <div class="user-bios">
+                <h2 class="title mb">Profil</h2>
+                <div id="profile" class="profile"></div>
+            </div>
+            <div class="user-repos">
+                <h2 class="title mt">Repolar</h2>
+                <ul id="repos"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="users-wrap br">
+        <h2 class="title mt">Geçmiş Aranan Kullanıcılar</h2>
+        <ul id="lastusers"></ul>
+    </div>
+
+    <div class="clear-wrap br">
+        <a href="#" id="clear-data" class="item_button">Tümünü Temizle</a>
+    </div>
+
+    <div class="messages"></div>
+
+</div>
+
+<script src="js/github.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
